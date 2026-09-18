@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Daily Brief</title><style>* { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --ink: #1c2130;
+  --muted: #6b7280;
+  --faint: #9ca3af;
+  --gold: #d4a017;
+  --gold-soft: #fdf6e3;
+  --card: #ffffff;
+  --line: #f0ece1;
+  --bg: #f7f5f0;
+  --green: #15803d; --green-soft: #ecfdf3;
+  --amber: #b45309; --amber-soft: #fffbeb;
+  --red: #b91c1c; --red-soft: #fef2f2;
+  --blue: #1d4ed8; --blue-soft: #eff6ff;
+  --purple: #7e22ce; --purple-soft: #faf5ff;
+}
+html { -webkit-text-size-adjust: 100%; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--ink);
+  line-height: 1.45;
+}
+.wrap { max-width: 720px; margin: 0 auto; padding: 20px 16px 48px; }
+
+.hero { padding: 16px 4px 20px; }
+.hero .kicker { font-size: 12px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--gold); }
+.hero h1 { font-size: 28px; font-weight: 800; letter-spacing: -0.02em; margin-top: 4px; }
+.hero .date { color: var(--muted); font-size: 14px; margin-top: 2px; }
+.hero .headline { margin-top: 10px; font-size: 14px; color: var(--muted); background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 10px 14px; }
+
+.tiles { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin-bottom: 20px; }
+.tile { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 14px 16px; }
+.tile .num { font-size: 26px; font-weight: 800; letter-spacing: -0.02em; }
+.tile .lbl { font-size: 12px; font-weight: 600; color: var(--muted); margin-top: 2px; }
+.tile .sub { font-size: 11px; color: var(--faint); margin-top: 4px; }
+.tile .dot { width: 8px; height: 8px; border-radius: 99px; display: inline-block; margin-bottom: 8px; }
+
+.section-title { font-size: 13px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--faint); margin: 22px 4px 10px; }
+.cards { display: grid; grid-template-columns: 1fr; gap: 12px; }
+@media (min-width: 620px) { .cards { grid-template-columns: repeat(3, 1fr); } }
+.card { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 16px; }
+.card h3 { font-size: 14px; font-weight: 700; display: flex; align-items: center; gap: 8px; margin-bottom: 10px; }
+.chip { width: 26px; height: 26px; border-radius: 8px; display: inline-flex; align-items: center; justify-content: center; font-size: 14px; flex-shrink: 0; }
+.chip.blue { background: var(--blue-soft); } .chip.green { background: var(--green-soft); } .chip.gold { background: var(--gold-soft); }
+.rows { list-style: none; }
+.rows li { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; padding: 6px 0; border-bottom: 1px dashed var(--line); font-size: 13px; }
+.rows li:last-child { border-bottom: 0; }
+.rows .k { color: #4b5563; }
+.rows .v { font-weight: 700; white-space: nowrap; }
+.v.ok { color: var(--green); } .v.warn { color: var(--amber); } .v.bad { color: var(--red); }
+.empty { font-size: 13px; color: var(--faint); }
+
+.waiting { list-style: none; }
+.waiting li { display: flex; gap: 10px; align-items: flex-start; padding: 7px 0; border-bottom: 1px dashed var(--line); font-size: 13px; }
+.waiting li:last-child { border-bottom: 0; }
+.waiting .box { width: 16px; height: 16px; border: 2px solid var(--gold); border-radius: 5px; margin-top: 1px; flex-shrink: 0; }
+
+.notice { background: var(--gold-soft); border: 1px solid #f0e3b8; border-radius: 16px; padding: 16px; font-size: 14px; color: #713f12; }
+.foot { text-align: center; color: var(--faint); font-size: 11px; margin-top: 28px; }
+</style></head>
+<body><main class="wrap">
+<header class="hero">
+<div class="kicker">Daily Brief</div>
+<h1>Good morning, Yisroel</h1>
+<div class="date">Sunday, September 20, 2026</div>
+<div class="headline">Quiet weekend — Email 2 to the 32-company list goes out 10 AM today.</div>
+</header>
+<section class="tiles" aria-label="Lending numbers">
+<div class="tile"><span class="dot" style="background:#1d4ed8"></span><div class="num">142</div><div class="lbl">Total contacts</div></div>
+<div class="tile"><span class="dot" style="background:#7e22ce"></span><div class="num">138</div><div class="lbl">Deals in progress</div></div>
+<div class="tile"><span class="dot" style="background:#d4a017"></span><div class="num">$1.3M</div><div class="lbl">Open pipeline</div></div>
+<div class="tile"><span class="dot" style="background:#15803d"></span><div class="num">$0</div><div class="lbl">Funded this month</div></div>
+</section>
+<div class="section-title">Today's brief</div>
+<section class="cards">
+<div class="card"><h3><span class="chip blue">📣</span> Cold outreach</h3>
+<ul class="rows">
+<li><span class="k">Cold emails out today</span><span class="v">1</span></li>
+<li><span class="k">Genie Rocket texts</span><span class="v">7/11</span></li>
+<li><span class="k">Stuck on GHL's grid</span><span class="v warn">4</span></li>
+<li><span class="k">Next step</span><span class="v">Email 2 · 10 AM</span></li>
+</ul></div>
+<div class="card"><h3><span class="chip green">💰</span> Money &amp; savings</h3>
+<ul class="rows">
+<li><span class="k">E-ZPass per-year save</span><span class="v ok">~$385</span></li>
+<li><span class="k">E-ZPass credit pending</span><span class="v">~$96</span></li>
+<li><span class="k">Insurance bundle potential</span><span class="v ok">~$75/mo</span></li>
+<li><span class="k">Progressive re-rate</span><span class="v bad">lost</span></li>
+</ul></div>
+<div class="card"><h3><span class="chip gold">⏳</span> Waiting on you</h3>
+<ul class="waiting">
+<li><span class="box"></span><span>JAX flight pick</span></li>
+<li><span class="box"></span><span>Sellvia reply approval</span></li>
+<li><span class="box"></span><span>12-lead call block</span></li>
+<li><span class="box"></span><span>Stripe key + Twilio A2P (console)</span></li>
+</ul></div>
+</section>
+<div class="foot">Updates every morning · live numbers from the CRM</div>
+</main></body></html>
